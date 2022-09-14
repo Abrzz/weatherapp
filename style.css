@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+body {
+  background-color: #2f2f2f;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+}
+
+.container::before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  font-family: Raleway;
+  color: white;
+  font-size: 72px;
+}
+
+form {
+  scale: 1.5;
+}
+
+input {
+  width: 300px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-btn {
+  background-color: #f53f7c;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.search-btn:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.display-weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  word-break: break-all;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: roboto;
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 16px 19px 32px -11px #000000;
+          box-shadow: 16px 19px 32px -11px #000000;
+}
+
+.display-weather .location {
+  font-size: 50px;
+}
+
+.display-weather .temperature {
+  margin-top: 50px;
+  font-size: 64px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */

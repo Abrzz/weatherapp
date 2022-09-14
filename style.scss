@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+body{
+    background-color: rgb(47, 47, 47);
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+}
+
+.container::before {
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba($color: #000000, $alpha: 0.75)
+}
+
+.title {
+    font-family: Raleway;
+    color: white;
+    font-size: 72px;
+}
+form {
+    scale: 1.5;
+}
+input {
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-btn {
+    background-color: rgb(245, 63, 124);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    &:hover {
+        scale:1.05;
+        cursor: pointer;
+    }
+}
+
+.display-weather {
+
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    flex-wrap: wrap;
+    word-break: break-all;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: roboto;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 16px 19px 32px -11px #000000;;
+    .location {
+        font-size: 50px;
+    }
+    .temperature {
+        margin-top: 50px;
+        font-size: 64px;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
